@@ -1,0 +1,27 @@
+{
+  "date": "2025-10-06",
+  "files": [
+    "frontmatter/00-title.md",
+    "frontmatter/01-copyright.md",
+    "01-introduction.md",
+    "02-ideal-reader.md",
+    "03-experience.md",
+    "04-culture-mission.md",
+    "05-prioritize-life.md",
+    "06-show-care.md",
+    "07-inversion-control.md",
+    "08-the-t-and-a.md",
+    "09-progression.md",
+    "10-exec-styles.md",
+    "11-business-model.md",
+    "12-okrs.md",
+    "13-metrics.md",
+    "14-purpose-problem-solutions.md",
+    "15-meetings-outcomes-tools.md",
+    "16-cross-team.md",
+    "17-agentops.md",
+    "18-packaging-launch.md",
+    "TOC.md"
+  ],
+  "missing_expected": []
+}

@@ -1,0 +1,17 @@
+name: example.api.v1
+owner: platform-team
+consumers: [service-a, service-b]
+sla:
+  availability: "99.9%"
+  p95_latency_ms: 300
+schema:
+  request: request_v1.json
+  response: response_v1.json
+errors:
+  taxonomy: [E_AUTH, E_RATE_LIMIT, E_PII_BLOCKED]
+policy_tests: [pii_redaction_v3, secret_scan_v2]
+acceptance_tests:
+  fixtures_repo: git://org/fixtures/example
+  pass_thresholds:
+    success_rate: ">= 0.99"
+    regression_delta: "<= 0.5%"

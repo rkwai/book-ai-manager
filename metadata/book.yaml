@@ -1,0 +1,45 @@
+---
+title: "Agents"
+subtitle: "From Management to AI Agent Management"
+author: ["Rick Wong"]
+date: "2025-10-06"
+rights: "© 2025 Rick Wong"
+lang: "en-US"
+publisher: "Self-published"
+edition: "2025 Agent Edition"
+
+# Amazon/Kindle Keywords (updated per user request)
+keywords:
+  - AI agent management
+  - engineering management
+  - product management AI
+  - AgentOps human in the loop
+  - OKRs for AI teams
+  - autonomy ladder agents
+  - cost per outcome CPO
+  - LM tooling
+  - Prompt Engineering and Context Engineering
+  - AI Agent Leadership
+
+# Book metadata
+toc: true
+toc-depth: 2
+document-css: true
+number-sections: false
+
+# Description
+description: >
+  A field guide for product and engineering leaders who want to turn AI agents 
+  into trusted operators—using Outcome Ownership, HITL, autonomy ladders, and 
+  Agent Scorecards—so your org ships faster without amplifying mistakes.
+
+# Categories (for Amazon KDP)
+categories:
+  - Computers & Technology › Artificial Intelligence
+  - Business & Money › Management & Leadership › Project Management
+  - Business & Money › Management & Leadership › Leadership
+  - Business & Money › Operations Management
+
+# Build options
+paperback-size: "6x9"
+paperback-type: "B/W"

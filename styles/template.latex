@@ -1,0 +1,29 @@
+\documentclass[12pt]{book}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\begin{document}
+$if(title)$
+\begin{titlepage}
+\centering
+{\Huge $title$ \par}
+\vspace{1em}
+{\Large $subtitle$ \par}
+\vspace{2em}
+{\large $author$ \par}
+\vfill
+{\large $date$ \par}
+\end{titlepage}
+$endif$
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+$body$
+\end{document}

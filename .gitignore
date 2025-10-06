@@ -1,0 +1,46 @@
+# Build outputs
+dist/
+*.epub
+*.pdf
+
+# Temporary files
+.filelist.txt
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Docker
+.dockerignore
+
+# Backup files
+*.bak
+*.backup
+

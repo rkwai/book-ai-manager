@@ -1,0 +1,23 @@
+capability: example-capability.v1
+type: agent
+version: 1.0.0
+owner: team@example.com
+purpose: short description
+autonomy_level: 2
+permissions: ["read:repo", "write:repo:module_x"]
+interfaces:
+  input: input_schema_v1
+  output: output_schema_v1
+context_packs: ["example-pack-v1"]
+acceptance_tests:
+  - accuracy >= 95%
+policy_tests:
+  - pii_redaction_v3
+observability:
+  traces: enabled
+  dashboards: ["/dash/example"]
+economics:
+  token_budget_usd_p95: 0.02
+  latency_p95_ms: 800
+governance:
+  change_control: "PR + security review"
