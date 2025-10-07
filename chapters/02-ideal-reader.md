@@ -159,9 +159,13 @@ Each appendix includes:
 
 ---
 
-## What You'll Need
+## What You'll Need (Optional: For Local AgentOps Setup)
 
-To apply this book, you'll need to set up a few things. Don't worry—none of this is complicated, and we'll walk you through it in **Chapter 8: AgentOps**.
+**The concepts in this book apply whether you use a managed agent platform or build your own.** If you manage people, you already understand outcome ownership, measurement, and trust—the same principles apply to agents.
+
+**This section is only relevant if you're setting up AgentOps infrastructure yourself.** Many teams use existing platforms (cloud providers, startups, or internal tools). If that's you, skip ahead—Chapter 8 will still be valuable for understanding what to measure and how to manage.
+
+**If you are running agents locally or building custom infrastructure**, here's what you'll need. Don't worry—none of this is complicated, and we'll walk you through it in **Chapter 8: AgentOps**.
 
 ### 1. A Code/Doc Repo for Artifacts
 Store your:

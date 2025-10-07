@@ -1,20 +1,20 @@
 ---
-title: "Execution Styles — Prototyper, Productizer, Platform"
+title: "Execution Styles — Prototyper, Productizer, Scaler"
 subtitle: "Agents mirror human archetypes"
 author: "Rick Wong"
 date: "2025-10-06"
 chapter: 11
-keywords: ["execution styles", "prototyper", "productizer", "scaler", "platform", "agent portfolios", "context packs", "guardrails", "acceptance", "SLOs"]
+keywords: ["execution styles", "prototyper", "productizer", "scaler", "agent portfolios", "context packs", "guardrails", "acceptance", "SLOs"]
 ---
 
 # Chapter 11
-## Execution Styles — Prototyper, Productizer, Platform
+## Execution Styles — Prototyper, Productizer, Scaler
 
-> • Three human archetypes: **Prototyper**, **Productizer & Scaler**, **Org-Scale Platform**.  
+> • Three human archetypes: **Prototyper**, **Productizer**, **Scaler**.  
 > • Agents mirror these modes; context, guardrails, and acceptance criteria differ by mode.  
 > • **Prototyper agent** optimizes for usable product and speed; backend optional; UI flexibility paramount.  
-> • **Productizer/Scaler agent** adheres to specs and cohesion while expanding value at speed.  
-> • **Platform/Org-Scale agent** optimizes for scalability, resilience, cost, security, uptime, and cost of change.
+> • **Productizer agent** expands a proven solution by increasing capability—more features, more value, more users.  
+> • **Scaler agent** reduces cost and complexity, increases reliability, and delivers to more—optimizing what already works.
 
 ---
 
@@ -32,13 +32,13 @@ Teams will need to be balanced with different mindsets in order to fully cover a
 
 Find the right problem/solution fast. Ship experiments, gather signal, iterate.
 
-### 2. Productizer & Scaler
+### 2. Productizer
 
-Grow a validated product. Add features coherently, maintain quality, scale users/revenue.
+Expand a proven solution by increasing capability. Add features coherently, maintain quality, grow value and users.
 
-### 3. Org-Scale Platform
+### 3. Scaler
 
-Scale the platform and the org: stability, performance, security, migration paths, and cost discipline.
+Reduce cost and complexity while increasing reliability. Deliver to more users without proportional cost increases. Optimize what already works.
 
 Agents embody these styles by changing **context**, **guardrails**, and **acceptance**.
 
@@ -84,13 +84,13 @@ Problem statement, user archetypes, success question(s), throwaway repo, design 
 
 ---
 
-## Style 2: Productizer & Scaler (Cohesion, Speed, Quality)
+## Style 2: Productizer (Capability, Growth, Value)
 
-**Goal**: *Expand value with coherence; maintain quality and reliability.*
+**Goal**: *Expand a proven solution by increasing capability—more features, more value, more users.*
 
 ### From the Original Book
 
-Technical Scale — Enjoys working on challenging technical problems with long business value. They are able to scale a tech stack to increase the system's capability without increasing its complexity.
+Technical Scale — Enjoys working on challenging technical problems with long business value. They are able to expand a validated product by adding features and capabilities that increase customer value.
 
 ### Typical Agent Portfolio
 
@@ -124,13 +124,13 @@ Product spec, design system, coding standards, migration plan, experiment playbo
 
 ---
 
-## Style 3: Org-Scale Platform (Stability, Cost, Security, Scale)
+## Style 3: Scaler (Efficiency, Reliability, Cost)
 
-**Goal**: *Make the platform safe, fast, and affordable at scale.*
+**Goal**: *Reduce cost and complexity while increasing reliability. Deliver to more without proportional increases in cost or risk.*
 
 ### From the Original Book
 
-Organizational Scale — Enjoys improving the technology team's organizational value. They are able to optimize a tech team and increase their output without incurring the cost of increased communication points.
+Organizational Scale — Enjoys improving the technology team's organizational value. They are able to scale delivery by reducing complexity, improving reliability, and optimizing costs—delivering more with less.
 
 ### Typical Agent Portfolio
 
@@ -170,9 +170,9 @@ SLO/SLA definitions, error budgets, architecture C4, threat model, cost dashboar
 ```
 Is the problem/solution validated?
   No  → Prototyper
-  Yes → Is growth constrained by product capacity or platform limits?
-         Product capacity → Productizer & Scaler
-         Platform limits  → Org-Scale Platform
+  Yes → What's the primary constraint?
+         Need more capability/features → Productizer
+         Need lower cost/higher reliability → Scaler
 ```
 
 All 3 styles are valuable. Every experienced engineer will know which style to use depending on the situation. Each engineer, however, will have a default execution style that they are best at.
@@ -184,11 +184,11 @@ The quickest way to determine the style is to watch how they solve problems give
 ## Quick Reference — Context & Autonomy by Style
 
 ```
-Style               Context Pack Size     Autonomy (typical)      Primary Metrics
-------------------  --------------------  -----------------------  -----------------------------------------
-Prototyper          Small, throwaway      L1–L3 (branch only)     learning velocity, user signal, time-to-insight
-Productizer/Scaler  Medium, curated       L2–L3 (staged rollout)  spec compliance, coverage, reliability, delivery
-Org-Scale Platform  Large, formal         L3–L4 (policy-gated)    SLOs, security pass, cost/unit, change safety
+Style        Context Pack Size     Autonomy (typical)      Primary Metrics
+-----------  --------------------  -----------------------  -----------------------------------------
+Prototyper   Small, throwaway      L1–L3 (branch only)     learning velocity, user signal, time-to-insight
+Productizer  Medium, curated       L2–L3 (staged rollout)  spec compliance, feature velocity, user growth
+Scaler       Large, formal         L3–L4 (policy-gated)    cost/unit, reliability, efficiency gains
 ```
 
 ---
@@ -220,16 +220,16 @@ acceptance: { spec_rubric: ">= 90%", coverage_delta: ">= 10%" }
 rollback: feature_flag_off
 ```
 
-### Platform Agent (YAML)
+### Scaler Agent (YAML)
 
 ```yaml
-name: reliability-guardian
+name: cost-optimizer
 level: 3
-purpose: auto-mitigate incidents within policy
-context_packs: [slo_defs, runbooks, threat_model]
-guardrails: [least_privilege, change_windows, canary_required]
-acceptance: { slo_breach_mitigation: "<= 15m", policy_pass: ">= 99%" }
-rollback: auto_rollback_to_last_good
+purpose: reduce infrastructure costs while maintaining SLOs
+context_packs: [cost_baselines, slo_defs, capacity_models]
+guardrails: [least_privilege, no_customer_impact, gradual_rollout]
+acceptance: { cost_reduction: ">= 20%", slo_maintained: "100%", incidents: "0" }
+rollback: auto_rollback_if_slo_breach
 ```
 
 ---
@@ -246,7 +246,7 @@ We need team members to constantly practice their craft and break through their 
 
 ## Summary
 
-Match **agent design** to the **execution style** of the moment. Prototyper agents chase signal fast; Productizer/Scaler agents expand value coherently; Platform agents make growth safe and affordable.
+Match **agent design** to the **execution style** of the moment. Prototyper agents chase signal fast; Productizer agents expand capability and value; Scaler agents reduce cost and complexity while increasing reliability.
 
 The archetype is constant—the **context, guardrails, and acceptance** change.
 

@@ -150,7 +150,7 @@ bash scripts/build_pdf.sh
 ### Part 4: Growth & Execution (Chapters 9-11)
 9. **Progression Tracks** — Scope for humans, autonomy for agents
 10. **Your Experience is Your Edge** — 2015-2025 lessons learned
-11. **Execution Styles** — Prototyper, Productizer, Platform
+11. **Execution Styles** — Prototyper, Productizer, Scaler
 
 ### Part 5: Business Alignment (Chapters 12-14)
 12. **Business Model** — Unit economics with agents

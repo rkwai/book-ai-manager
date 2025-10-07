@@ -34,10 +34,10 @@ You'll learn:
 - How to apply **Inversion of Control** to empower both teams and agents.
 
 ### Execution Styles Mapped to Agent Portfolios
-Not everyone works the same way. The book introduced three execution styles: **Prototyper**, **Productizer**, and **Org-Scale Platform**. These styles apply to humans *and* to how you structure your agent portfolios:
-- **Prototypers** use agents for rapid iteration and immediate value.
-- **Productizers** use agents to scale a proven solution with reliability.
-- **Platform builders** use agents to reduce complexity while increasing capability.
+Not everyone works the same way. The book introduced three execution styles: **Prototyper**, **Productizer**, and **Scaler**. These styles apply to humans *and* to how you structure your agent portfolios:
+- **Prototypers** use agents for rapid iteration and learning signal.
+- **Productizers** use agents to expand capability—more features, more value, more users.
+- **Scalers** use agents to reduce cost and complexity while increasing reliability.
 
 ### Business Model, OKRs, KPIs, and Cross-Team Contracts Reframed for Agents
 Agents don't change **what** you measure—they change **how** you deliver and what becomes possible. You'll learn:
@@ -137,9 +137,13 @@ Throughout the book, you'll find inline templates in YAML and Markdown. Use them
 
 ---
 
-## What You'll Need
+## What You'll Need (Optional: For Local AgentOps Setup)
 
-To apply this book effectively, you'll need:
+**The key to this book is understanding the concepts—outcome ownership, measurement, and trust.** These management principles apply whether you're using a managed agent platform or building your own infrastructure.
+
+**The technical setup below is only necessary if you're deploying AgentOps locally.** Many teams use existing platforms (cloud providers, agent services, or internal tools). If that's you, the frameworks in this book still apply—you'll just focus on what to measure and how to manage, not on infrastructure.
+
+**If you are setting up agents locally**, you'll need:
 
 1. **A code/doc repo** for Context Packs, Design Briefs, and Eval harnesses.
 2. **A dashboard** to track tokens per task, autonomous accept rate, escalation/correction rates, and Cost per Outcome.
@@ -147,7 +151,7 @@ To apply this book effectively, you'll need:
 4. **A registry** (YAML, JSON, or DB) to track agents, versions, owners, and scopes.
 5. **CI integration** for evals and policy tests.
 
-Don't worry—we'll cover how to set these up in **Chapter 8: AgentOps** and reference implementations in the appendices.
+Don't worry—we'll cover how to set these up in **Chapter 8: AgentOps** and reference implementations in the appendices. But remember: **the setup is optional. The concepts are universal.**
 
 ---
 

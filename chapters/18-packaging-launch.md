@@ -50,7 +50,7 @@ A field guide for product and engineering leaders who want to turn AI agents int
 - IoC for agents: **Context Packs** and autonomy ladders
 - **T-shaped humans and agents**; producer/consumer mapping
 - Flattened progression: scope & guarantees for people; autonomy for agents
-- Three execution styles: **Prototyper**, **Productizer**, **Org-Scale Platform**
+- Three execution styles: **Prototyper**, **Productizer**, **Scaler**
 - Business model, pricing by outcome, and a 30-60-90 tune-up
 - OKRs that hide the machinery; **Agent Scorecards** that don't
 - P→P→S as an evidence pipeline; **artifacts over meetings**
@@ -92,7 +92,7 @@ This book is a field guide for **product and engineering leaders** who want to t
 Inside, you'll get a practical operating system:
 
 - Make **humans own outcomes**, agents do the busywork.
-- Design **agent portfolios** for your stage: Prototypes, Productize & Scale, Org-Scale Platform.
+- Design **agent portfolios** for your stage: Prototyper, Productizer, Scaler.
 - Shift from meetings to **artifacts**: P→P→S, decision logs, C4 diagrams, runbooks.
 - Run **AgentOps**: registry, HITL, eval harness, promotion/demotion by evidence.
 - Track what matters: **tokens per task, autonomous accept rate, escalation/correction rates**, cost/latency/safety/drift.
